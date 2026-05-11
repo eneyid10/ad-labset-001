@@ -306,17 +306,6 @@ Run each command to confirm the environment is built correctly.
 
 ---
 
-## Career Relevance
-
-| Role | How This Lab Applies |
-|---|---|
-| IT Support / Help Desk | Password resets, account unlocks, group membership changes — the top three ticket types in any enterprise |
-| Sysadmin | Designing OU structure, deploying GPOs, managing domain-joined machines at scale |
-| Cloud Engineer | Entra ID uses identical concepts: users, groups, roles, conditional access. On-prem AD knowledge transfers directly |
-| Security Analyst | AD is the most targeted system in ransomware attacks. Understanding how it works is foundational to defending it |
-
----
-
 ## Tools Used
 
 | Tool | Purpose | Cost |
@@ -329,4 +318,3 @@ Run each command to confirm the environment is built correctly.
 
 ---
 
-*Part of a personal homelab series documenting hands-on experience with cloud infrastructure, identity management, and information security.*
