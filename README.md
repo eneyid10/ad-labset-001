@@ -21,12 +21,12 @@ Active Directory is the identity backbone of the majority of enterprise organisa
 ## Architecture
 
 ```
-<img width="1440" height="890" alt="a51c326870b749c49f29a0e66829af957e81246c00694163ba3bb6a070129044" src="https://github.com/user-attachments/assets/0b893747-c85e-48e3-b348-a045d33ba060" />
-
+<img width="679" height="423" alt="a51c326870b749c49f29a0e66829af957e81246c00694163ba3bb6a070129044" src="https://github.com/user-attachments/assets/a38f30d9-f9a0-434d-ae5c-5cf626ff3b26" />
 
 GPO: IT Security Policy (linked to OU: IT)
   · Minimum password length: 12 characters
-  · Password complexity: Enabled
+  · Password complexity: Enabled<img width="679" height="423" alt="a51c326870b749c49f29a0e66829af957e81246c00694163ba3bb6a070129044" src="https://github.com/user-attachments/assets/f6da921d-6206-43a8-b156-9b96c9c5459f" />
+
   · Screen lock timer: 900 seconds (15 min)
   · Removable storage access: Denied
 ```
