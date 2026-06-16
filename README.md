@@ -8,6 +8,7 @@
 ![Certs](https://img.shields.io/badge/Aligned-Network%2B%20%7C%20Security%2B%20%7C%20Azure%20Admin-6366f1?style=flat-square)
 
 ---
+# Watch Me Do This Lab Here[Watch Me Do This Lab Here]([https://www.example.com](https://www.loom.com/share/458749e7e0fa4dca988b09084f350943))
 
 ## Overview
 
@@ -20,51 +21,8 @@ Active Directory is the identity backbone of the majority of enterprise organisa
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        AZURE (Free Tier)                        │
-│                                                                 │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │              Forest: lab.local                           │  │
-│  │                                                          │  │
-│  │   ┌──────────────────────────────────────────────────┐  │  │
-│  │   │           Domain: lab.local                      │  │  │
-│  │   │                                                  │  │  │
-│  │   │        ┌─────────────────────┐                  │  │  │
-│  │   │        │   Domain Controller  │                  │  │  │
-│  │   │        │  Windows Server 2025 │                  │  │  │
-│  │   │        │   Standard_B2s VM    │                  │  │  │
-│  │   │        │  · AD DS Role        │                  │  │  │
-│  │   │        │  · DNS Server        │                  │  │  │
-│  │   │        │  · GPMC              │                  │  │  │
-│  │   │        └──────────┬──────────┘                  │  │  │
-│  │   │                   │ Authenticates & Authorises   │  │  │
-│  │   │        ┌──────────┼──────────┐                  │  │  │
-│  │   │        │          │          │                   │  │  │
-│  │   │   ┌────▼───┐ ┌────▼────┐ ┌──▼─────┐ ┌───────┐ │  │  │
-│  │   │   │ OU: IT │ │OU: Fin. │ │OU: HR  │ │OU:Sales│ │  │  │
-│  │   │   │        │ │         │ │        │ │        │ │  │  │
-│  │   │   │[Group] │ │[Group]  │ │[Group] │ │[Group] │ │  │  │
-│  │   │   │IT_Admin│ │Finance_ │ │HR_Users│ │Sales_  │ │  │  │
-│  │   │   │        │ │Users    │ │        │ │Users   │ │  │  │
-│  │   │   │[User]  │ │[User]   │ │[User]  │ │[User]  │ │  │  │
-│  │   │   │alice.  │ │bob.     │ │carol.  │ │david.  │ │  │  │
-│  │   │   │chen    │ │patel    │ │jones   │ │smith   │ │  │  │
-│  │   │   │        │ │         │ │        │ │        │ │  │  │
-│  │   │   │[GPO]   │ │         │ │        │ │        │ │  │  │
-│  │   │   │IT Sec. │ │         │ │        │ │        │ │  │  │
-│  │   │   │Policy  │ │         │ │        │ │        │ │  │  │
-│  │   │   └────────┘ └─────────┘ └────────┘ └────────┘ │  │  │
-│  │   │                                                  │  │  │
-│  │   │        ┌────────────────────┐                    │  │  │
-│  │   │        │  OU: Computers     │                    │  │  │
-│  │   │        │  (domain-joined    │                    │  │  │
-│  │   │        │   workstations)    │                    │  │  │
-│  │   │        └────────────────────┘                    │  │  │
-│  │   └──────────────────────────────────────────────────┘  │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│                                                                 │
-│  RDP (port 3389) ◄──── Local Machine                           │
-└─────────────────────────────────────────────────────────────────┘
+<img width="1440" height="890" alt="a51c326870b749c49f29a0e66829af957e81246c00694163ba3bb6a070129044" src="https://github.com/user-attachments/assets/0b893747-c85e-48e3-b348-a045d33ba060" />
+
 
 GPO: IT Security Policy (linked to OU: IT)
   · Minimum password length: 12 characters
