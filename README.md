@@ -12,9 +12,9 @@
 
 ## Overview
 
-This lab documents the end-to-end build of an Active Directory environment on Windows Server 2025, hosted on an Azure free-tier VM. It covers domain controller promotion, organisational unit design, role-based access control via security groups, Group Policy enforcement, and common help desk operations — all skills that transfer directly to enterprise Windows and hybrid cloud environments.
+This lab documents the end-to-end build of an Active Directory environment on Windows Server 2025, hosted on an Azure free-tier VM. It covers domain controller promotion, organizational unit design, role-based access control via security groups, Group Policy enforcement, and common help desk operations — all skills that transfer directly to enterprise Windows and hybrid cloud environments.
 
-Active Directory is the identity backbone of the majority of enterprise organisations. Understanding how to build and operate it is foundational knowledge for IT Support, Sysadmin, Cloud Engineer, and Security Analyst roles alike. Hybrid environments sync on-premises AD to Microsoft Entra ID (formerly Azure AD), meaning this knowledge applies equally to cloud roles.
+Active Directory is the identity backbone of the majority of enterprise organizations. Understanding how to build and operate it is foundational knowledge for IT Support, Sysadmin, Cloud Engineer, and Security Analyst roles alike. Hybrid environments sync on-premises AD to Microsoft Entra ID (formerly Azure AD), meaning this knowledge applies equally to cloud roles.
 
 ---
 
@@ -43,7 +43,7 @@ Active Directory is the identity backbone of the majority of enterprise organisa
 | Skill | Real-World Application |
 |---|---|
 | Promote Windows Server to Domain Controller | First step in every enterprise Windows environment |
-| Create Organisational Units (OUs) | Structure directory by department for targeted policy application |
+| Create Organizational Units (OUs) | Structure directory by department for targeted policy application |
 | Create users, groups, and group memberships | Foundation of role-based access control at any scale |
 | Configure Group Policy Objects (GPOs) | Centrally enforce security settings across all managed machines |
 | Join a machine to the domain | Connect workstations as managed, policy-enforced resources |
@@ -120,7 +120,7 @@ Install-ADDSForest `
 
 ---
 
-### Step 3 — Build Organisational Structure
+### Step 3 — Build Organizational Structure
 
 Created five OUs, four department security groups, four user accounts, and assigned each user to their department group.
 
@@ -245,7 +245,7 @@ Run each command to confirm the environment is built correctly.
 
 **Forest / Domain** — The forest is the top-level container for the entire AD structure. A domain lives inside the forest with a DNS-style name (`lab.local`). Most organisations have one domain per forest.
 
-**Organisational Unit (OU)** — A folder inside AD used to organise users, computers, and groups by department or function. The primary mechanism for scoping Group Policy.
+**Organizational Unit (OU)** — A folder inside AD used to organise users, computers, and groups by department or function. The primary mechanism for scoping Group Policy.
 
 **Security Group** — A container for user accounts used to grant access to resources. Assign access to the group once; manage who has access by managing group membership. This is role-based access control in practice.
 
