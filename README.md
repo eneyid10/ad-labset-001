@@ -8,7 +8,7 @@
 ![Certs](https://img.shields.io/badge/Aligned-Network%2B%20%7C%20Security%2B%20%7C%20Azure%20Admin-6366f1?style=flat-square)
 
 ---
-# [Watch Me Do This Lab Here](https://www.loom.com/share/0e6e7915a9e74b4d9bddd504ab61cd56)
+
 
 ## Overview
 
